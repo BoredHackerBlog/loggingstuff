@@ -5,6 +5,8 @@ This will also download winlogbeat, the open source version. You have to configu
 
 Run the .bat file with admin command prompt or copy and paste things as you need
 
+Tested with IE VM - MSEdge Win10 x64 Stable 1809 virtual machine (https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
+
 I'm using Humio so config winlogbeat config I have here is specifically for it. In Humio, you do need to change default ingest-token parser to json (https://cloud.humio.com/sandbox/settings/ingest-tokens).
 
 # links from where i took commands and inspiration from
