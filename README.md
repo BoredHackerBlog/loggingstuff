@@ -3,6 +3,8 @@ This contains a .bat/batch script for disabling some Windows protections and ena
 
 This will also download winlogbeat, the open source version. You have to configure the output on your own.
 
+Run the .bat file with admin command prompt or copy and paste things as you need
+
 I'm using Humio so config winlogbeat config I have here is specifically for it. In Humio, you do need to change default ingest-token parser to json (https://cloud.humio.com/sandbox/settings/ingest-tokens).
 
 # links from where i took commands and inspiration from
