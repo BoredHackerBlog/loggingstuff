@@ -1,9 +1,9 @@
 # loggingstuff
-This contains a .bat/batch script for disabling some Windows protections and enabling a bunch of logging.
+This contains a .bat/batch script for disabling some Windows protections and enabling a bunch of logging. You'll want to test and disable some event ids or modify the script.
 
 This will also download winlogbeat, the open source version. You have to configure the output on your own.
 
-I'm using Humio so config winlogbeat config I have here is specifically for it.
+I'm using Humio so config winlogbeat config I have here is specifically for it. In Humio, you do need to change default ingest-token parser to json (https://cloud.humio.com/sandbox/settings/ingest-tokens).
 
 # links from where i took commands and inspiration from
 
@@ -14,6 +14,8 @@ https://github.com/Cyb3rWard0g/HELK/
 https://github.com/TonyPhipps/SIEM/blob/master/Lab/WindowsVictim.md
 
 https://docs.humio.com/integrations/ingest-logs-with-a-data-shipper/beats/winlogbeat/
+
+https://www.elastic.co/guide/en/beats/winlogbeat/current/winlogbeat-installation-configuration.html#installation
 
 https://www.windows-commandline.com/start-stop-windows-update-service/
 
