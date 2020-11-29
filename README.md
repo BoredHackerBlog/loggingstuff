@@ -34,5 +34,3 @@ https://github.com/ctxis/CAPE/blob/master/conf/auxiliary.conf
 
 # todo
 Add OpenEDR (https://www.openedr.com/  https://github.com/ComodoSecurity/openedr) and filebeat?
-
-Add packetbeat?
