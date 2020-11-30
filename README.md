@@ -9,6 +9,11 @@ Tested with IE VM - MSEdge Win10 x64 Stable 1809 virtual machine (https://develo
 
 I'm using Humio so winlogbeat.yml config I have here is specifically for it. In Humio, you do need to change default ingest-token parser to json (https://cloud.humio.com/sandbox/settings/ingest-tokens).
 
+# packetbeat
+loggingstuff_packetbeat.bat for installing and forwarding packetbeat logs.
+
+humio_packetbeat.yml is the config that I modified and use with Humio
+
 # links from where i took commands and inspiration from
 this course: https://www.blackhillsinfosec.com/training/applied-purple-teaming-training/
 
