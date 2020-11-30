@@ -14,6 +14,9 @@ loggingstuff_packetbeat.bat for installing and forwarding packetbeat logs.
 
 humio_packetbeat.yml is the config that I modified and use with Humio
 
+# openedr
+loggingstuff_openedr.bat - dont use this. the way openedr logs is annoying to work with. see: https://github.com/ComodoSecurity/openedr/issues/14
+
 # links from where i took commands and inspiration from
 this course: https://www.blackhillsinfosec.com/training/applied-purple-teaming-training/
 
@@ -37,5 +40,8 @@ https://github.com/rkovar/PowerShell/blob/master/audit.bat
 
 https://github.com/ctxis/CAPE/blob/master/conf/auxiliary.conf
 
-# todo
-Add OpenEDR (https://www.openedr.com/  https://github.com/ComodoSecurity/openedr) and filebeat?
+https://www.elastic.co/guide/en/beats/packetbeat/current/configuring-howto-packetbeat.html
+
+https://www.openedr.com/
+
+https://github.com/ComodoSecurity/openedr
