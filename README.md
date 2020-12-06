@@ -17,6 +17,9 @@ humio_packetbeat.yml is the config that I modified and use with Humio
 # openedr
 loggingstuff_openedr.bat - dont use this. the way openedr logs is annoying to work with. see: https://github.com/ComodoSecurity/openedr/issues/14
 
+# O365
+loggingstuff_o365.sh is for linux. yml file is for humio output
+
 # links from where i took commands and inspiration from
 this course: https://www.blackhillsinfosec.com/training/applied-purple-teaming-training/
 
@@ -45,3 +48,7 @@ https://www.elastic.co/guide/en/beats/packetbeat/current/configuring-howto-packe
 https://www.openedr.com/
 
 https://github.com/ComodoSecurity/openedr
+
+https://www.humio.com/whats-new/blog/how-to-collect-microsoft-office-365-logs-with-o365beat
+
+https://github.com/counteractive/o365beat
