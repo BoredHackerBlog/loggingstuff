@@ -1,0 +1,22 @@
+o365beat:
+  tenant_domain: "CHANGME.onmicrosoft.com"
+  client_secret: "CHANGEME"
+  client_id:     "CHANGEME"     # aka application id (GUID)
+  directory_id:  "CHANGEME"  # aka tenant id (GUID)
+  registry_file_path: "./o365beat.state"
+
+  ## the following content types will be pulled from the API
+  ## for available types, see https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference#working-with-the-office-365-management-activity-api
+  content_types:
+    - Audit.AzureActiveDirectory
+    - Audit.Exchange
+    - Audit.SharePoint
+    - Audit.General
+
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["https://cloud.humio.com:443/api/v1/ingest/elastic-bulk"]
+  password: "CHANGEME"
+  compression_level: 5
+  bulk_max_size: 200
+  worker: 5
