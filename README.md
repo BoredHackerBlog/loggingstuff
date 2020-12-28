@@ -1,3 +1,5 @@
+Warning: Not for production use. Use this for research and testing.
+
 # loggingstuff
 This contains a .bat/batch script for disabling some Windows protections and enabling a bunch of logging. You'll want to test and disable some event ids or modify the script.
 
@@ -19,6 +21,9 @@ loggingstuff_openedr.bat - dont use this. the way openedr logs is annoying to wo
 
 # O365
 loggingstuff_o365.sh is for linux. yml file is for humio output
+
+# Linux logs
+loggingstuff_linux_logs.sh and humio_linux_log_filebeat.yml are for using filebeat to ship linux logs to humio. Data in humio will be unparsed and will just appear as lines.
 
 # links from where i took commands and inspiration from
 this course: https://www.blackhillsinfosec.com/training/applied-purple-teaming-training/
