@@ -23,7 +23,9 @@ loggingstuff_openedr.bat - dont use this. the way openedr logs is annoying to wo
 loggingstuff_o365.sh is for linux. yml file is for humio output
 
 # Linux logs
-loggingstuff_linux_logs.sh and humio_linux_log_filebeat.yml are for using filebeat to ship linux logs to humio. Data in humio will be unparsed and will just appear as lines. I'm using snoopy to look at command line process. Auditbeat w/ system module would also work but OSS version doesnt have system module so i can't use it to ship data to Humio.
+loggingstuff_linux_logs.sh and humio_linux_log_filebeat.yml are for using filebeat to ship linux logs to humio. Data in humio will be unparsed and will just appear as lines.
+
+I'm using snoopy to look at command line process. Auditbeat w/ system module would also work but OSS version doesnt have system module so i can't use it to ship data to Humio.
 
 # links from where i took commands and inspiration from
 this course: https://www.blackhillsinfosec.com/training/applied-purple-teaming-training/
