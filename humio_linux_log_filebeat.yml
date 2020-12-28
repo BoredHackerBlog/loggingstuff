@@ -1,0 +1,22 @@
+filebeat.inputs:
+
+- type: log
+
+  enabled: true
+
+  # Paths that should be crawled and fetched. Glob based paths.
+  paths:
+    - /var/log/*.log
+    - /home/*/.*_history
+    - /root/.*_history
+
+# ---------------------------- Elasticsearch Output ----------------------------
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["https://cloud.humio.com:443/api/v1/ingest/elastic-bulk"]
+
+  username: "doesntmatter"
+  password: "CHANGEME"
+  compression_level: 5
+  bulk_max_size: 200
+  worker: 5
