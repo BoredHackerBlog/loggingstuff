@@ -26,7 +26,6 @@ winlogbeat.event_logs:
   - name: Microsoft-Windows-WMI-Activity/Operational
     event_id: 5857,5858,5859,5860,5861
 
-#----------------------------- Kafka output --------------------------------
 output.elasticsearch:
   hosts: ["https://cloud.humio.com:443/api/v1/ingest/elastic-bulk"]
   password: "CHANGEME"
